@@ -11,6 +11,11 @@
   object-fit: cover;
   padding: 2px;
   border: 1px solid #c0c0c0;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.products-wrapper .product-item:hover img {
+  transform: scale(1.1);
 }
 .products-wrapper .product-desc {
   display: flex;
@@ -30,4 +35,32 @@
   font-weight: bold;
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.modal-content .modal-body {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 5rem;
+}
+.modal-content .modal-body img {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+}
+.modal-content .close-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #2a5ea5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: capitalize;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
