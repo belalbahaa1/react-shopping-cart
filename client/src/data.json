@@ -2,7 +2,7 @@
     {
         "id": "id1",
         "title": "Product 1",
-     "imageUrl": "images/pexels-photo-12.jpg",
+     "imageUrl": "images/product1.jpg",
         "desc": "This is a product 1",
         "price": 100,
         "size": ["S", "M"]
@@ -10,7 +10,7 @@
     {
         "id": "id2",
         "title": "Product 2",
-        "imageUrl": "images/pexels-photo-12.jpg",
+        "imageUrl": "images/product2.jpg",
         "desc": "This is a product 2",
         "price": 120,
         "size": ["S", "M"]
@@ -18,7 +18,7 @@
     {
         "id": "id3",
         "title": "Product 3",
-     "imageUrl": "images/pexels-photo-12.jpg",
+     "imageUrl": "images/product3.jpg",
         "desc": "This is a product 3",
         "price": 90,
         "size": ["S", "M", "L"]
@@ -26,7 +26,7 @@
     {
         "id": "id4",
         "title": "Product 4",
-     "imageUrl": "images/pexels-photo-12.jpg",
+     "imageUrl": "images/product4.png",
         "desc": "This is a product 4",
         "price": 40,
         "size": ["S", "M"]
