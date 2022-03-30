@@ -28,4 +28,20 @@ main {
 .wrapper .filter-wrapper {
   width: 30%;
 }
+/* mobile responsive */
+@media screen and  (max-width: 768px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    
+  }
+  .wrapper .products-wrapper {
+    width: 100%;
+  }
+  .wrapper .filter-wrapper {
+    width: 100%;
+  }
+}
+
+
+  
 

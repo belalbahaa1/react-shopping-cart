@@ -4,6 +4,7 @@
 }
 .products-wrapper .product-item {
   width: 23%;
+  overflow: hidden;
 }
 .products-wrapper .product-item img {
   width: 100%;
@@ -63,4 +64,21 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+@media screen and (min-width: 400px) {
+  .products-wrapper {
+    flex-direction: column;
+  }
+  .products-wrapper .product-item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .products-wrapper {
+    flex-direction: row;
+  }
+  .products-wrapper .product-item {
+    width: 23%;
+  }
 }

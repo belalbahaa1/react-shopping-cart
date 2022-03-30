@@ -12,7 +12,11 @@ const ProductModal = ({ product, setProduct }) => {
           </button>
         </div>
         <div className="modal-body">
-          <img src={product.imageUrl} alt={product.title} />
+          <img
+            src={product.imageUrl}
+            alt={product.title}
+            style={{ width: "50%" }}
+          />
           <p>{product.desc}</p>
           <span>${product.price}</span>
         </div>
