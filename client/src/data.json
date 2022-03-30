@@ -13,7 +13,7 @@
         "imageUrl": "images/product2.jpg",
         "desc": "This is a product 2",
         "price": 120,
-        "size": ["S", "M"]
+        "size": ["XL", "L"]
     },
     {
         "id": "id3",
