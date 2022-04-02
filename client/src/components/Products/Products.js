@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../css/Products/Products.css";
 import ProductModal from "./ProductModal";
 
-const Products = ({ products }) => {
+const Products = ({ products, handleAddToCart }) => {
   const [product, setProduct] = useState("");
 
   const openModal = (product) => {
@@ -19,7 +19,12 @@ const Products = ({ products }) => {
             <p>{product.title}</p>
             <span>${product.price}</span>
           </div>
-          <button className="product-btn">add to cart</button>
+          <button
+            className="product-btn"
+            onClick={() => handleAddToCart(product)}
+          >
+            add to cart
+          </button>
         </div>
       ))}
 

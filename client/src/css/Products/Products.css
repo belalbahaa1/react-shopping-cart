@@ -3,6 +3,7 @@
   justify-content: space-between;
 }
 .products-wrapper .product-item {
+  margin-top: 15px;
   width: 23%;
   overflow: hidden;
 }
