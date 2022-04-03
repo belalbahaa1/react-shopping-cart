@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../css/Cart/Cart.css";
 import Checkout from "../CheckoutForm/Checkout";
+import Bounce from "react-reveal/Bounce";
 
 const Cart = (props) => {
   const [showForm, setShowForm] = useState(false);
@@ -38,25 +39,27 @@ const Cart = (props) => {
           </div>
         )}
       </div>
-      <div className="cart-items">
-        {props.cartItems.map((item) => {
-          return (
-            <div className="cart-item" key={item.id}>
-              <img src={item.imageUrl} alt="" />
-              <div className="cart-info">
-                <div>
-                  <p>Title: {item.title}</p>
-                  <p>qty: {item.qty} </p>
-                  <p>Price: ${item.price * item.qty}</p>
+      <Bounce bottom cascade>
+        <div className="cart-items">
+          {props.cartItems.map((item) => {
+            return (
+              <div className="cart-item" key={item.id}>
+                <img src={item.imageUrl} alt="" />
+                <div className="cart-info">
+                  <div>
+                    <p>Title: {item.title}</p>
+                    <p>qty: {item.qty} </p>
+                    <p>Price: ${item.price * item.qty}</p>
+                  </div>
+                  <button onClick={() => props.handleRemoveFromCart(item)}>
+                    Remove Item
+                  </button>
                 </div>
-                <button onClick={() => props.handleRemoveFromCart(item)}>
-                  Remove Item
-                </button>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </Bounce>
       {props.cartItems.length === 0 ? (
         ""
       ) : (
